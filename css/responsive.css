@@ -1,0 +1,267 @@
+/* ==========================================================================
+   Aura Luxury Travel - Responsive Breakpoints & Mobile Optimization
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (Max 1200px) */
+@media screen and (max-width: 1200px) {
+  :root {
+    --container-max: 1040px;
+  }
+
+  .destinations-grid,
+  .packages-grid,
+  .offers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .experience-split {
+    gap: 3rem;
+  }
+}
+
+/* Medium Tablets & iPads (Max 992px) */
+@media screen and (max-width: 992px) {
+  .site-header {
+    height: 74px;
+    background: rgba(8, 18, 32, 0.95);
+    backdrop-filter: blur(16px);
+  }
+
+  /* Hamburger & Mobile Menu Drawer */
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background: var(--color-navy-darkest);
+    border-left: 1px solid var(--border-gold);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6rem 2.5rem 3rem 2.5rem;
+    gap: 1.5rem;
+    box-shadow: -15px 0 40px rgba(0, 0, 0, 0.6);
+    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.15rem;
+    width: 100%;
+    padding: 0.6rem 0;
+  }
+
+  .nav-actions .nav-phone-btn {
+    display: none;
+  }
+
+  /* Search Box Card */
+  .search-box-card {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1.4rem;
+  }
+
+  .search-field-group:not(:last-child)::after {
+    display: none;
+  }
+
+  .search-submit-btn {
+    grid-column: span 2;
+  }
+
+  /* Experience Split Layout */
+  .experience-split {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .experience-floating-card {
+    right: 1rem;
+    bottom: -1.5rem;
+    max-width: 260px;
+  }
+
+  /* Booking Section */
+  .booking-section-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-summary-col {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Phones & Small Devices (Max 768px) */
+@media screen and (max-width: 768px) {
+  .section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .hero-headline {
+    font-size: 2.35rem;
+  }
+
+  .hero-supporting-text {
+    font-size: 1rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.85rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    padding: 0.95rem 1.5rem;
+  }
+
+  .search-box-card {
+    grid-template-columns: 1fr;
+  }
+
+  .search-submit-btn {
+    grid-column: span 1;
+  }
+
+  .destinations-grid,
+  .packages-grid,
+  .offers-grid,
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destination-card {
+    height: 390px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .gallery-item {
+    height: 180px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .footer-bottom-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .review-card-inner {
+    padding: 2.2rem 1.5rem;
+  }
+
+  .review-quote-text {
+    font-size: 1.1rem;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-form-col,
+  .booking-summary-col {
+    padding: 2rem 1.4rem;
+  }
+
+  .newsletter-card {
+    padding: 2.8rem 1.5rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    border-radius: var(--radius-lg);
+    background: transparent;
+    padding: 0;
+    gap: 0.8rem;
+    border: none;
+    box-shadow: none;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+  }
+
+  .newsletter-btn {
+    width: 100%;
+  }
+
+  .voucher-card {
+    padding: 2rem 1.4rem;
+  }
+
+  .voucher-details-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .whatsapp-popup-chat {
+    width: calc(100vw - 40px);
+    right: -10px;
+  }
+
+  .experience-floating-card {
+    position: static;
+    margin-top: 1.5rem;
+    max-width: 100%;
+  }
+
+  .filter-bar-wrap {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-pills-group {
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions | Aura Luxury Expeditions</title>
+  <meta name="description" content="Answers to common questions regarding bespoke itinerary planning, luxury cancellation policies, visas, and 24/7 concierge assistance.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header scrolled" id="site-header">
+    <div class="nav-container">
+      <a href="index.html#home" class="brand-logo">
+        <div class="logo-symbol"><i class="fas fa-compass"></i></div>
+        <div class="logo-text">
+          <span class="logo-name">AURA <span>LUXE</span></span>
+          <span class="logo-tagline">Curated Expeditions</span>
+        </div>
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="destinations.html" class="nav-link">Destinations</a>
+        <a href="packages.html" class="nav-link">Travel Packages</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="faq.html" class="nav-link active">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="tel:+18008922872" class="nav-phone-btn"><i class="fas fa-phone-volume"></i> +1 (800) 892-AURA</a>
+        <a href="booking.html" class="nav-cta-btn"><i class="fas fa-calendar-check"></i> Book Trip</a>
+        <button class="nav-hamburger" id="nav-hamburger-btn"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: var(--nav-height);">
+    <section class="section section-dark" style="background: linear-gradient(180deg, var(--color-navy-dark) 0%, var(--color-navy-deep) 100%); text-align: center;">
+      <div class="container">
+        <span class="section-eyebrow">Clarity & Confidence</span>
+        <h1 class="section-title" style="color: #FFFFFF; font-size: clamp(2.5rem, 4.5vw, 3.8rem);">Frequently Asked Questions</h1>
+        <p class="section-desc" style="max-width: 780px; margin: 0 auto; color: var(--color-text-light);">
+          Everything you need to know about bespoke customization, luxury deposits, flight bookings, and on-ground concierge support.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="faq-accordion-wrap" id="faq-accordion-container">
+          <!-- Dynamically populated from travelData -->
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;">
+          <p style="color: var(--color-text-muted); margin-bottom: 1.2rem;">Still have questions? Our Senior Concierge is available 24 hours daily.</p>
+          <a href="contact.html" class="btn-secondary" style="color: var(--color-navy-deep); border-color: var(--color-navy-deep);">
+            <i class="fas fa-headset"></i>
+            <span>Speak with a Destination Specialist</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Aura Luxury Expeditions Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="index.html#home">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="packages.html">Packages</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initFaqAccordion();
+    });
+  </script>
+</body>
+</html>
